@@ -532,7 +532,9 @@ video {
   height: auto;
 }
 
-*,  ::before,  ::after{
+*, 
+  ::before, 
+  ::after{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -729,11 +731,7 @@ html{
   display: flex;
 }
 .title {
-    background: linear-gradient(
-      180deg,
-      rgba(74, 108, 247, 0.4) 0%,
-      rgba(74, 108, 247, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(74, 108, 247, 0.4) 0%, rgba(74, 108, 247, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -761,11 +759,7 @@ html{
   }
 }
 .dark .title {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   }
 #supportCheckbox:checked ~ div span{
   opacity: 1;
@@ -1209,6 +1203,9 @@ html{
 }
 .justify-around{
   justify-content: space-around;
+}
+.gap-2{
+  gap: 0.5rem;
 }
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -1705,6 +1702,10 @@ html{
 }
 .duration-300{
   transition-duration: 300ms;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 /* third-party libraries CSS */
@@ -2379,6 +2380,10 @@ html{
     justify-content: flex-end;
   }
 
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
   .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -2729,3 +2734,4 @@ html{
     max-width: 370px;
   }
 }
+
