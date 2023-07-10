@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 /* third-party libraries CSS */
 .tns-controls {
   @apply absolute left-1/2 bottom-14 z-30 flex -translate-x-1/2 space-x-5 lg:left-[70px] lg:translate-x-0;
@@ -14,10 +18,12 @@
 }
 
 @layer base {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     @apply border-stroke;
   }
-  
+
   body {
     @apply font-body;
   }
@@ -59,11 +65,7 @@
   }
 
   .title {
-    background: linear-gradient(
-      180deg,
-      rgba(74, 108, 247, 0.4) 0%,
-      rgba(74, 108, 247, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(74, 108, 247, 0.4) 0%, rgba(74, 108, 247, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -73,11 +75,7 @@
   }
 
   .dark .title {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #supportCheckbox:checked ~ div span {
