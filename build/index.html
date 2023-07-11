@@ -1,8 +1,69 @@
-Html Webpack Plugin:
+<head><link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>Html Webpack Plugin:
 <pre>
-  Error: HtmlWebpackPlugin: could not load file C:\Users\amine\Desktop\Proj  ects\My Projects\noormedia\src\images\favicon.ico
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve './favicon.ico' in 'C:\Users\amine\Desk  top\Projects\My Projects\noormedia\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve './favicon.ico' in   'C:\Users\amine\Desktop\Projects\My Projects\noormedia\src'
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\Compilation.js:2013:28
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:795:13
+      at eval (eval at create (C:\Users\amine\Desktop\Projects\My Projects\noorm  edia\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:275:22
+      at eval (eval at create (C:\Users\amine\Desktop\Projects\My Projects\noorm  edia\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:431:22
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:124:11
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:667:25
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:852:8
+      at C:\Users\amine\Desktop\Projects\My Projects\noormedia\node_modules\webp  ack\lib\NormalModuleFactory.js:972:5
   
-  - index.js:494 
-    [noormedia]/[html-webpack-plugin]/index.js:494:35
+  - Compilation.js:2013 
+    [noormedia]/[webpack]/lib/Compilation.js:2013:28
   
-</pre>
+  - NormalModuleFactory.js:795 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:795:13
+  
+  
+  - NormalModuleFactory.js:275 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:275:22
+  
+  
+  - NormalModuleFactory.js:431 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:431:22
+  
+  - NormalModuleFactory.js:124 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:124:11
+  
+  - NormalModuleFactory.js:667 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:667:25
+  
+  - NormalModuleFactory.js:852 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:852:8
+  
+  - NormalModuleFactory.js:972 
+    [noormedia]/[webpack]/lib/NormalModuleFactory.js:972:5
+  
+  - child-compiler.js:169 
+    [noormedia]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:564 
+    [noormedia]/[webpack]/lib/Compiler.js:564:11
+  
+  - Compiler.js:1183 
+    [noormedia]/[webpack]/lib/Compiler.js:1183:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [noormedia]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1179 
+    [noormedia]/[webpack]/lib/Compiler.js:1179:33
+  
+  - Compilation.js:2784 finalCallback
+    [noormedia]/[webpack]/lib/Compilation.js:2784:11
+  
+  - Compilation.js:3089 
+    [noormedia]/[webpack]/lib/Compilation.js:3089:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [noormedia]/[tapable]/lib/Hook.js:18:14
+  
+</pre><script defer src="bundle.js"></script>
