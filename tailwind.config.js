@@ -10,15 +10,7 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
-    colors: {
-      current: "currentColor",
-      transparent: "transparent",
-      white: "#FFFFFF",
-      primary: "#4A6CF7",
-      "dark-text": "#79808A",
-      dark: "#111722",
-      stroke: "#e5e7eb",
-    },
+
     screens: {
       sm: "540px",
       // => @media (min-width: 576px) { ... }
@@ -44,6 +36,15 @@ module.exports = {
       },
       dropShadow: {
         light: "drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1))",
+      },
+      colors: {
+        current: "currentColor",
+        transparent: "transparent",
+        white: "#FFFFFF",
+        primary: "#4A6CF7",
+        "dark-text": "#79808A",
+        dark: "#111722",
+        stroke: "#e5e7eb",
       },
     },
   },
